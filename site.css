@@ -1,0 +1,112 @@
+/* willia — estilos compartidos.
+   La mayor parte del diseño sigue inline en cada página; este archivo suma
+   accesibilidad (contraste, foco, movimiento reducido), la nav en mobile y
+   los componentes nuevos (hero con carrusel, casos destacados, producto). */
+
+/* ---------- Contraste ----------
+   El gris #9A938A y el acento sobre crema no llegan a 4.5:1.
+   Se corrigen sin tocar cada página: sobre fondo claro se oscurecen,
+   sobre fondo oscuro (data-dark) se mantienen. */
+[style*="#9A938A"] { color:#6B655D !important; }
+[style*="color:var(--accent)"] { color:color-mix(in srgb, var(--accent) 60%, #16130F) !important; }
+[data-dark] [style*="#9A938A"] { color:#B3ACA1 !important; }
+[data-dark] [style*="color:var(--accent)"] { color:var(--accent) !important; }
+[data-dark] { --accent-on-dark:var(--accent); }
+
+/* ---------- Foco de teclado ---------- */
+:focus-visible { outline:2px solid #16130F; outline-offset:3px; border-radius:8px; }
+[data-dark] :focus-visible { outline-color:#F4F1EC; }
+[data-card]:focus-visible { transform:translateY(-4px); box-shadow:0 24px 60px rgba(22,19,15,0.12); }
+
+/* ---------- Nav en mobile ---------- */
+@media (max-width:640px) {
+  nav { border-radius:28px !important; padding:8px 8px 8px 18px !important; gap:8px !important; width:100%; }
+  nav > div { flex:1 1 100%; order:3; overflow-x:auto; flex-wrap:nowrap !important; justify-content:flex-start !important; scrollbar-width:none; }
+  nav > div::-webkit-scrollbar { display:none; }
+  nav > div a { white-space:nowrap; }
+  nav > a[data-pill] { margin-left:auto; }
+}
+
+/* ---------- Movimiento reducido ---------- */
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto !important; }
+  *, *::before, *::after { transition-duration:0.01ms !important; animation-duration:0.01ms !important; }
+  [data-card]:hover { transform:none !important; }
+}
+
+/* ---------- Hero ---------- */
+.hero { max-width:1320px; margin:0 auto; padding:clamp(56px,8vw,96px) clamp(20px,5vw,40px) clamp(40px,6vw,64px); display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:clamp(32px,5vw,72px); align-items:stretch; }
+.hero h1 { font-weight:700; font-size:clamp(38px,5.4vw,84px); line-height:1; letter-spacing:-0.03em; margin-top:26px; text-wrap:balance; }
+@media (max-width:920px) { .hero { grid-template-columns:1fr; } }
+
+.cta-row { display:flex; gap:12px; margin-top:34px; flex-wrap:wrap; }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:14px 24px; border-radius:999px; font-size:15px; font-weight:600; border:1px solid rgba(22,19,15,0.14); background:rgba(255,255,255,0.6); color:#16130F; transition:background .2s, color .2s; }
+.btn:hover { background:#16130F; color:#F4F1EC; }
+.btn.primary { background:#16130F; color:#F4F1EC; border-color:#16130F; }
+.btn.primary:hover { background:var(--accent,#DA916A); color:#16130F; border-color:var(--accent,#DA916A); }
+.status { display:inline-flex; align-items:center; gap:10px; margin-top:26px; font-size:14px; color:#3A352E; }
+.status::before { content:""; width:8px; height:8px; border-radius:50%; background:#2F9E5B; box-shadow:0 0 0 4px rgba(47,158,91,0.18); flex:none; }
+
+/* ---------- Carrusel del hero ---------- */
+.carousel { position:relative; min-height:520px; border-radius:32px; overflow:hidden; background:#E7E2DA; box-shadow:0 30px 80px rgba(22,19,15,0.16); isolation:isolate; }
+@media (max-width:920px) { .carousel { min-height:0; aspect-ratio:4/3; } }
+.carousel .slide { position:absolute; inset:0; display:block; opacity:0; visibility:hidden; transition:opacity .9s ease, visibility 0s linear .9s; color:#F4F1EC; }
+.carousel .slide.is-active { opacity:1; visibility:visible; transition:opacity .9s ease, visibility 0s; z-index:1; }
+.carousel .slide img { width:100%; height:100%; object-fit:cover; transform:scale(1.02); transition:transform 7s ease-out; }
+.carousel .slide.is-active img { transform:scale(1.09); }
+.carousel .slide::after { content:""; position:absolute; inset:0; background:linear-gradient(to top, rgba(22,19,15,0.72) 0%, rgba(22,19,15,0) 46%); }
+.carousel .cap { position:absolute; left:28px; right:28px; bottom:56px; z-index:2; }
+.carousel .cap b { display:block; font-size:clamp(22px,2.4vw,32px); letter-spacing:-0.02em; line-height:1.1; }
+.carousel .cap i { display:block; margin-top:8px; font-style:normal; font-size:13px; letter-spacing:0.12em; text-transform:uppercase; opacity:0.85; }
+.carousel .dots { position:absolute; left:28px; bottom:22px; z-index:3; display:flex; gap:8px; }
+.carousel .dots button { width:28px; height:28px; padding:0; border:0; background:none; cursor:pointer; display:grid; place-items:center; }
+.carousel .dots button::before { content:""; width:22px; height:3px; border-radius:2px; background:rgba(244,241,236,0.4); transition:background .3s, width .3s; }
+.carousel .dots button[aria-current="true"]::before { background:#F4F1EC; width:30px; }
+.carousel .dots :focus-visible { outline-color:#F4F1EC; }
+@media (prefers-reduced-motion:reduce) { .carousel .slide img, .carousel .slide.is-active img { transform:none; transition:none; } }
+
+/* ---------- Casos destacados (formato póster) ---------- */
+.featured { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:clamp(16px,2vw,24px); margin-top:clamp(36px,5vw,56px); }
+.fcard { position:relative; display:flex; flex-direction:column; justify-content:flex-end; min-height:clamp(480px,46vw,640px); border-radius:32px; overflow:hidden; background:#16130F; color:#F4F1EC; isolation:isolate; box-shadow:0 30px 70px rgba(22,19,15,0.22); transition:transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s; }
+.fcard:hover { color:#F4F1EC; transform:translateY(-6px); box-shadow:0 40px 90px rgba(22,19,15,0.32); }
+.fcard .media { position:absolute; inset:0; z-index:-2; }
+.fcard .media img, .fcard .media video { width:100%; height:100%; object-fit:cover; transition:transform 1.2s cubic-bezier(.2,.8,.2,1); }
+.fcard:hover .media img, .fcard:hover .media video { transform:scale(1.05); }
+.fcard::after { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(to top, rgba(14,12,9,0.94) 0%, rgba(14,12,9,0.78) 34%, rgba(14,12,9,0) 68%); }
+.fcard .num { position:absolute; top:22px; right:26px; font-size:clamp(44px,5vw,64px); font-weight:700; letter-spacing:-0.04em; line-height:1; color:#F4F1EC; text-shadow:0 2px 18px rgba(14,12,9,0.55); }
+.fcard .pillar { position:absolute; left:22px; top:22px; padding:8px 15px; border-radius:999px; background:#F4F1EC; color:#16130F; font-size:12px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; max-width:calc(100% - 110px); }
+.fcard .txt { padding:28px 28px 30px; }
+.fcard h3 { font-weight:700; font-size:clamp(30px,3vw,42px); line-height:1.02; letter-spacing:-0.025em; }
+.fcard .tags { margin-top:12px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(244,241,236,0.78); font-weight:600; }
+.fcard p { margin-top:14px; font-size:16px; line-height:1.6; color:rgba(244,241,236,0.9); text-wrap:pretty; }
+.fcard .go { margin-top:20px; font-size:15px; font-weight:600; }
+.fcard .arr { color:#F0B08C; }
+@media (prefers-reduced-motion:reduce) { .fcard:hover { transform:none; } .fcard:hover .media img, .fcard:hover .media video { transform:none; } }
+
+/* ---------- Cortes visuales ---------- */
+.rule { max-width:1180px; margin:0 auto clamp(40px,6vw,64px); height:1px; background:rgba(22,19,15,0.14); }
+.band { margin:0 20px 20px; border-radius:44px; padding:clamp(56px,8vw,96px) 0; background-color:#ECE5D8; background-image:radial-gradient(rgba(22,19,15,0.13) 1px, transparent 1.2px); background-size:22px 22px; scroll-margin-top:100px; overflow:hidden; }
+.band .inner { max-width:1320px; margin:0 auto; padding:0 clamp(20px,5vw,40px); }
+
+/* ---------- Producto / vibe coding ---------- */
+.pcards { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:clamp(16px,2vw,24px); margin-top:clamp(32px,5vw,48px); }
+.pcard { display:flex; flex-direction:column; border-radius:28px; overflow:hidden; border:1px solid rgba(22,19,15,0.08); background:#FBF9F5; box-shadow:0 10px 30px rgba(22,19,15,0.05); transition:transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s; }
+.pcard:hover { transform:translateY(-4px); box-shadow:0 24px 60px rgba(22,19,15,0.12); }
+.pcard .panel { padding:32px 30px; min-height:210px; display:flex; flex-direction:column; justify-content:space-between; gap:28px; }
+.pcard .panel .chip { align-self:flex-start; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; font-weight:700; padding:6px 12px; border-radius:999px; border:1px solid currentColor; opacity:0.85; }
+.pcard .panel .name { font-size:clamp(28px,3vw,38px); font-weight:700; letter-spacing:-0.025em; line-height:1.02; }
+.pcard .panel .tag { margin-top:10px; font-size:15px; line-height:1.5; opacity:0.85; }
+.pcard.fulbito .panel { background:#141513; color:#F1EFE8; }
+.pcard.fulbito .panel .name span { color:#9BD67A; }
+.pcard.pozos .panel { background:#F3C93C; color:#1A1707; }
+.pcard.sitio .panel { background:#16130F; color:#F4F1EC; }
+.pcard.sitio .panel .name span { color:#DA916A; }
+.pcard .body { padding:24px 28px 26px; display:flex; flex-direction:column; flex:1; }
+.pcard .body p { font-size:16px; line-height:1.65; color:#3A352E; text-wrap:pretty; }
+.pcard .body .go { margin-top:auto; padding-top:20px; font-size:15px; font-weight:600; }
+
+.pcard.static:hover { transform:none; box-shadow:0 10px 30px rgba(22,19,15,0.05); }
+
+/* ---------- Selector de idioma ---------- */
+.lang { font-size:12px; font-weight:700; letter-spacing:0.08em; padding:8px 12px; border-radius:999px; border:1px solid rgba(22,19,15,0.18); color:#3A352E; line-height:1; }
+.lang:hover { background:#16130F; color:#F4F1EC; border-color:#16130F; }

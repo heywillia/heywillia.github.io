@@ -1,68 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://heywillia.github.io/</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/bhassa-toyota.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/bhassa-toyota.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/bhassa-toyota.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/bhassa-toyota.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/bhassa-toyota.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/bhassa-toyota.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/ethereum-lima.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/ethereum-lima.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/ethereum-lima.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/ethereum-lima.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/ethereum-lima.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/ethereum-lima.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/lude.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/lude.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/lude.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/lude.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/lude.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/lude.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/cacique.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/cacique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/cacique.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/cacique.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/cacique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/cacique.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/grupo-home-market.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/grupo-home-market.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/grupo-home-market.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/grupo-home-market.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/grupo-home-market.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/grupo-home-market.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/herrajes-los-halcones.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/herrajes-los-halcones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/herrajes-los-halcones.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/herrajes-los-halcones.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/herrajes-los-halcones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/herrajes-los-halcones.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/cerveza-thiafel.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/cerveza-thiafel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/cerveza-thiafel.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/cerveza-thiafel.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/cerveza-thiafel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/cerveza-thiafel.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/birdie.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/birdie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/birdie.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/birdie.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/birdie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/birdie.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/nonighter.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/nonighter.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/nonighter.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/nonighter.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/nonighter.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/nonighter.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/vinoma.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/vinoma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/vinoma.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/vinoma.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/vinoma.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/vinoma.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/criollos.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/criollos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/criollos.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/criollos.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/criollos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/criollos.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://heywillia.github.io/cruda-crew.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/cruda-crew.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/cruda-crew.html"/>
+    <lastmod>2026-09-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://heywillia.github.io/en/cruda-crew.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://heywillia.github.io/cruda-crew.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://heywillia.github.io/en/cruda-crew.html"/>
+    <lastmod>2026-09-29</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
